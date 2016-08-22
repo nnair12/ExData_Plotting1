@@ -12,6 +12,6 @@ data$Datetime <- as.POSIXct(datetime)
 ## making the plot
 plot(data$Global_active_power~data$Datetime, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 
-# Saves histogram
+# Saves plot
 dev.copy(png, file = "plot2.png", height = 480, width = 480)
 dev.off()
